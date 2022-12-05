@@ -1,0 +1,95 @@
+@import 'assets/styles/index.scss';
+
+.text {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.93;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+  height: 32px;
+
+  align-items: center;
+  padding-left: 20px;
+  border-left: 2px solid #e0e0e0;
+  @include mq(not-desk) {
+    display: none;
+  }
+  @include mq(desk) {
+    border-left: 2px solid #e0e0e0;
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  @include mq(not-desk) {
+    justify-content: flex-end;
+  }
+}
+
+.rightBar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-right: 36px;
+  @include mq(mob-only) {
+    display: none;
+  }
+}
+
+.user {
+  // display: flex;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.93;
+  letter-spacing: 0.04em;
+  padding-right: 20px;
+  // height: 32px;
+  border-right: 2px solid #e0e0e0;
+  color: #212121;
+  // align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.93;
+  letter-spacing: 0.04em;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+
+  cursor: pointer;
+  color: #9b9faa;
+  // margin-right: 40px;
+  // @extend %btnTransperent;
+}
+
+.btn_modal {
+  border: none;
+  z-index: 100;
+  padding: 0;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: block;
+  background-color: transparent;
+
+  @include mq(desk) {
+    display: none;
+  }
+}
+
+.btn_icon {
+  width: 24px;
+  height: 24px;
+}

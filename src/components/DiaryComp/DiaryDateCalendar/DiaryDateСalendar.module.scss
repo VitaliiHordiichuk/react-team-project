@@ -1,0 +1,51 @@
+@import 'assets/styles/index.scss';
+.wrap {
+  margin-bottom: 60px;
+}
+
+.calendarWrap {
+  font-weight: 700;
+  font-size: 24px;
+  font-size: 34px;
+  line-height: 1.2;
+  width: 250px;
+  @include mq(mob-only) {
+    font-size: 18px;
+    // width: 150px;
+  }
+}
+
+.calendarWrap div input {
+  // width: 250px;
+  @include mq(mob-only) {
+    // width: 150px;
+  }
+}
+
+.calendarWrap div {
+  border: none;
+}
+
+.calendarWrap div button svg {
+  color: brown;
+  & :enabled:hover,
+  & :enabled:focus {
+    stroke: var(--main-accent-color);
+  }
+}
+
+.calendar {
+  background-color: var(--main-accent-color);
+  font-size: 18px;
+}
+
+.calendarDate {
+  background-color: var(--secondary-background-color);
+}
+
+.calendarDate button {
+  & :hover,
+  & :focus {
+    background-color: var(--main-accent-color);
+  }
+}
